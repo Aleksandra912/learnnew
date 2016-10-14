@@ -16,20 +16,32 @@
 	</div>
 	
 	<div id="content">
-		<h1><em><b> Мой личный сайт </em></b> </h1>
+		<h1><em><strong> Мой личный сайт </em></strong> </h1>
 		<div id="center">
-			<img src="img/photo.png" alt = "Это я ;)"></img>
+			<img src="img/photo.png" border="2px" alt = "Это я ;)"></img>
 			<div id="box_text">
-				<h3> Привет!</h3>
+				<h3><big> Привет!</big></h3>
 				<p><b> Меня зовут Александра.</b> <br>
-				Я - начинающий программист. Совсем недавно встала на этот путь, но уже успела написать свой первый сайт.</p>
-				<p> В этом мне помог курс <a href = "https://geekbrains.ru/courses/2" target="_blank">Основы программирования </a> образовательного ITпортала GeekBrains. </p>
+				Я - начинающий программист. Совсем недавно встала на этот путь, но уже успела написать свой первый сайт.</p>;
 				<p> На этом сайте вы сможете сыграть в игры, которые я написала. в дальнейшем сайт будет дополняться моими успехами ;)</p>
-
-				<a href = "puzzles.html"> Загадки </a>
-				<a href = "max.html"> Максимальное число </a>
-				<a href = "Converter.html"> Конвертер валют </a>
-				<a href = "guess the number.html" > Угадай число </a>
+				<ul>
+					<li><a href = "puzzles.html"> Загадки </a></li>
+					<li><a href = "max.html"> Максимальное число </a> </li>
+					<li><a href = "Converter.html"> Конвертер валют </a></li>
+					<li><a href = "guess the number.html"> Угадай число </a></li>
+					<li><input type="button" onclick="click1()" value="возрастной ценз"></li>
+					<script>
+						function click1(){
+						var v=+prompt("Ваш возраст?");
+							if (v>=25&&v<=50) {
+		 					alert("Вы нам подходите"); 	
+		 					}
+		 					else  {
+		 					alert ("Увы и Ах! Прощайте!");
+		 					}
+		 				}
+					</script>
+				</ul>
 			</div>
 		</div>
 	</div>
