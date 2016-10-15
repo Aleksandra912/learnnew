@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+	<script>
+	alert ("Отгадай загадку:");
+	var answer=prompt("Зимой и летом одним цветом?");
+		if ( answer=="елка") {alert ("молодчина! Верный ответ!"); alert ("Конец игры")}
+		else  {alert ("Ответ неверный");}
+	
+	var rightanswer=0;
+	
+	alert ("А теперь дай как можно больше правильных ответов");
+	var answer=prompt ("Солнце печёт, липа цветёт. Рожь поспевает, когда это бывает?");
+		if (answer=="лето") {
+		rightanswer ++
+		} else {
+		alert ("Неверно");
+		}
+	var answer=prompt ("Тает снежок, ожил лужок.День прибывает. Когда это бывает?");
+		if (answer=="весна") {
+		rightanswer ++
+		} else {
+		alert ("Неверно");
+		}
+	var answer=prompt ("К вечеру умирает,по утру оживает.");
+		if (answer=="день") {
+		rightanswer ++
+		} else {
+		alert ("Неверно");
+		}
+	alert ("Верных ответов:"+rightanswer);
+	alert ("конец игры");
+	</script>
