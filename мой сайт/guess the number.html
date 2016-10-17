@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<script>
+	var x=50;
+	var answer=+prompt("Введите число:");
+	var counter=1;
+	  if (counter>3) {
+		alert ("Увы! Твои попытки закончились!")
+	  }
+	  else
+	  {
+		  while (answer!==x)
+		  {
+			  if (answer>x){
+				alert("Число больше загаданного");
+				counter++
+			  }
+			  if (answer<x){
+				alert("Число меньше загаданного");
+				counter++
+			  }
+				alert (answer=+prompt("Введите еще число:"));
+			  }
+		  alert("Угадал!")
+	  }
+</script>
+
+	
