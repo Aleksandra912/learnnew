@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<script>
+
+    var cel = "";
+    var counter = 1;
+
+    alert("Попадешь ли ты в свинку? ;)");
+    cel = parseInt(prompt("Куда стреляем?"));
+
+
+    while (counter <= 3) {
+        if (cel > 30 && cel < 40 || cel > 50 && cel < 60) {
+                alert("Снайпер!");
+                break;
+        }
+        if (counter <= 3) {
+            alert("Увы! Твои попытки закончились!");
+            break;
+        }
+        alert("Мимо :(");
+            counter++;
+            cel = parseInt(prompt("Куда стреляем?"));
+    }
+</script>

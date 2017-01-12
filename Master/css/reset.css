@@ -1,0 +1,61 @@
+
+
+h4 {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+}
+
+h5 {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 22px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+}
+
+a {
+    text-align: right;
+    /*font-weight: bold;*/
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+a:focus {
+    color: #1E88E5;
+}
+
+a:hover {
+    color:#1E88E5;
+}
+
+p {
+    font-size: 70px;
+    color: white;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-style: italic;
+    vertical-align: center;
+}
+
+hr {
+    width: 60%;
+    text-align: center;
+}
+
+.button{}

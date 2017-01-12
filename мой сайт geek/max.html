@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Функции</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		 function MAX (a,b,c) 
+		{
+			a=+a; b=+b; c=+c;
+			var res;
+			if( (a>b)&&(a>c))
+			{
+				res=a;
+			}
+			else
+			{
+				if (b>c)
+				{
+					res=b;
+				}
+				else
+				{
+					res=c;
+				}
+			}
+			return res;
+		}
+	</script>
+</head>
+<body>
+	a=<input type="text" id="nambA"><br>
+	b=<input type="text"id="nambB"><br>
+	c=<input type="text"id="nambC"><br>
+	r=<input type="text"id="nambR"><br>
+	<input 	type="button" 
+			onclick="nambR.value = MAX(nambA.value,
+									nambB.value,
+									nambC.value)"
+			value="Результат"><br>
+</body>
+</html>
+
+
+	

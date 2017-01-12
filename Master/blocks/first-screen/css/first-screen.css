@@ -1,0 +1,18 @@
+.first-screen_title {
+    width: 60%;
+    height: 150px;
+    /*background-color: #9C27B0;*/
+}
+
+.contacts{
+    width: 40%;
+    height: 150px;
+    background-color: #CE93D8;
+}
+
+.fixed-menu{
+    width: 100%;
+    height: 50px;
+    /*background-color: #4A148C;*/
+    text-align: center;
+}

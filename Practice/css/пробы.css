@@ -1,0 +1,75 @@
+body{
+    background:url("../images/Going Up.jpg");
+    font-family: Arial, 'Times New Roman';
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    margin: auto;
+    border-bottom: 2px solid black;
+    padding: 15px;
+}
+
+.header table{
+   width: 100%;
+}
+
+.cup{
+    width: 70%;
+}
+
+h1{
+    text-align: center;
+    text-shadow:#CCCCCC;
+}
+
+.basis {
+    margin: auto;
+    border-bottom: 1px solid black;
+}
+
+.basis_menu {
+    padding-left: 10px;
+    text-align: left;
+    float: left;
+    border-right: 1px solid black;
+}
+
+a{
+    font-size: 200%;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover, a:visited {
+    font-size: 250%;
+    color: #4A148C;
+}
+
+.basis_text {
+    margin: auto;
+    padding-left: 300px;
+    border-left: 1px solid black;
+}
+
+p{
+    font-weight: bold;
+    text-align: left;
+    text-indent: 15px;
+    padding: 10px;
+}
+
+.basis_text p:first-letter{
+    font-size: 150%;
+    color: red;
+}
+
+.footer {
+    margin: auto;
+}
+
+.footer p{
+    text-align: center;
+}
+

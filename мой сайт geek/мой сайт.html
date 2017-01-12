@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Мой первый сайт</title>
+	<link rel = "stylesheet" href = "style.css">
+	
+</head>
+<body>
+	<div class = "header">
+		<a id="selected" href = "#" > Главная </a><span>/</span>
+		<a href = "puzzles.html" > Загадки </a><span>/</span>
+		<a href = "max.html" >Максимальное число</a><span>/</span>
+		<a href = "Converter.html" > Конвертер валют </a><span>/</span>
+		<a href = "guess the number.html" > Угадай число </a>
+	</div>
+	
+	<div class="content">
+		<h1><em><strong> Мой личный сайт </em></strong> </h1>
+		<div class="center">
+			<img src="img/myphoto.png" alt = "Это я ;)">
+			<div class="box_text">
+				<h3> Привет!</h3>
+				<h4>Меня зовут Александра.</h4><br>
+				<p>Я - начинающий программист. Совсем недавно встала на этот путь, но уже успела написать свой первый сайт.</p>
+				<p> На этом сайте вы сможете сыграть в игры, которые я написала. в дальнейшем сайт будет дополняться моими успехами ;)</p>
+				<ul>
+					<li><a href = "./puzzles.html"> Загадки </a></li>
+					<li><a href = "./max.html"> Максимальное число </a> </li>
+					<li><a href = "./Converter.html"> Конвертер валют </a></li>
+					<li><a href = "./guess the number.html"> Угадай число </a></li>
+					<li><input type="button" onclick="click1()" value="возрастной ценз"></li>
+					<script>
+						function click1() {
+						  var age=+prompt("Ваш возраст?");
+							if (age>=25&&age<=50) {
+		 					  alert("Вы нам подходите")
+		 					}
+							else  {
+		 					  alert ("Увы и Ах! Прощайте!");
+		 					}
+		 				}
+					</script>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+	<p>Мой первый сайт</p>
+	</div>
+</body>
+</html>
