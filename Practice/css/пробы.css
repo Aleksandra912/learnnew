@@ -1,5 +1,6 @@
 body{
     background:url("../images/Going Up.jpg");
+    background-size: cover;
     font-family: Arial, 'Times New Roman';
     margin: 0;
     padding: 0;
@@ -19,9 +20,31 @@ body{
     width: 70%;
 }
 
+@keyframes anim_h1 {
+    0%{
+        color: black;
+    }
+    20%{
+        color: blue;
+    }
+    50%{
+        color: red;
+        font-size: 500%;
+    }
+    100%{
+        color:black;
+        font-size: 400%;
+    }
+}
+
+h1{
+    animation: anim_h1 4s 5;
+}
+
 h1{
     text-align: center;
-    text-shadow:#CCCCCC;
+    text-shadow: 5px 5px 2px #777;
+    font-size: 400%;
 }
 
 .basis {
@@ -30,16 +53,48 @@ h1{
 }
 
 .basis_menu {
+    font-size: 150%;
+    color: #002a80;
     padding-left: 10px;
     text-align: left;
     float: left;
     border-right: 1px solid black;
+
+}
+
+.basis_menu ul{
+    list-style: none;
+    padding-bottom: 30px;
+}
+
+.basis_menu li ul {
+    position: absolute;
+    margin-left: 80px;
+    text-align: center;
+    float: left;
+    list-style: none;
+    padding-left: 0;
+    margin-top: -30px;
+}
+
+.basis_menu li ul{
+    display: none;
+    transition: display 2s;
+}
+
+.basis_menu li:hover ul{
+    display: block;
+}
+
+.basis_menu li ul a{
+    font-size: 100%;
 }
 
 a{
     font-size: 200%;
     font-weight: bold;
     text-decoration: none;
+    text-align: center;
 }
 
 a:hover, a:visited {

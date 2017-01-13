@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Регистрация</title>
+    <meta charset="utf-8">
+    <link rel = "stylesheet" href = "css/registration.css">
+  </head>
+  <body>
+    <div class="header">
+      <table>
+        <tr>
+          <td>
+            <img src="images/image.jpg" alt="картинка" width="350px">
+          </td>
+          <td class="cup">
+            <h1> Регистрация </h1>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="basis">
+      <div class="basis_menu">
+        <h2> Главное меню: </h2>
+        <a href="#"> Пункт 1 </a></br>
+        <a href="#"> Пункт 2 </a></br>
+        <a href="#"> Пункт 3 </a></br>
+        <form>
+          <a href="bools.html" methods="post">
+            <input type="button" name="Reg" value="Главная">
+          </a>
+        </form>
+        <audio controls>
+          <source src="audio/audio.mp3" type="audio/mpeg">
+          <source src="audio/audio.ogg" type="audio/ogg">
+          <p> А ваш браузер не поддерживает аудио :( Обновите!!!</p>
+        </audio>
+      </div>
+      <div class="basis_text">
+        <form>
+          <label> Ваше имя
+            <input type="text" name="name" placeholder="Ваше имя">
+          </label> <br/>
+          <label> Ваш Email
+            <input type="email" name="email" placeholder="Email" required>
+          </label><br/>
+          <label> Ваш телефон
+            <input type="tel" name="tel"  placeholder="8-9132345678" required pattern="8-[0-9]{10}">
+          </label><br/>
+          <label> Дата рождения
+            <input type="date" name="date" required>
+          </label><br/>
+          <label> Пароль
+            <input type="password" name="password" required>
+          </label><br/>
+          <input type="submit" value="Регистрация">
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <p> Первая верстка &copy; 2017 </p>
+    </div>
+  </body>
+</html>
