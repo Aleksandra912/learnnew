@@ -217,7 +217,7 @@ section a:hover{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin: 10px;
+    margin: 0;
 }
 
 .main-left {
@@ -233,14 +233,41 @@ section a:hover{
     border-radius: 0 0 5px 5px;
     border-right: 2px solid #fff;
     padding: 10px 0;
+    margin: 10px;
+    width: 100%;
 }
 
 .main-header{
     background: linear-gradient(180deg, #5aa1dc 0%, #3a8cbc 60%, #227eb2 61%, #096e98 100%);
     color: #fff;
     border-radius: 10px 10px 0 0;
-    font-size: 120%;
-    padding: 10px 10px 8px 10px;
+    font-size: 130%;
+    padding: 0 0 0 15px;
+    height: 40px;
+    width: 95%;
+}
+
+.main_left-menu .main-header{
+    position: relative;
+    top: -35px;
+    left: -2px;
+}
+
+.left-menu a{
+    font-size: 100%;
+    text-decoration: none;
+    background: url("../images/arrow_menu.png") no-repeat 8px center;
+    color: #444953;
+    display: block;
+    padding: 10px 0 10px 20px;
+}
+
+.left-menu ul{
+    list-style: none;
+}
+
+.left-menu li li{
+    background: url("../images/menu_sep.png") no-repeat center bottom;
 }
 
 .main-right {
@@ -248,7 +275,7 @@ section a:hover{
     margin: 20px;
 }
 
-.main-center {
-    width: 55%;
-
+.main_center {
+    width: 65%;
 }
+
