@@ -104,58 +104,65 @@
       </div>
       <div class="layout_main-container">
         <div class="main_left">
-          <div class="main_left-menu">
-            <div class="main-header">
-              <p>Уроки и статьи</p>
-            </div>
-            <div class="left-menu">
-              <ul>
-                <li>
-                  <img src="images/rusakov/arrow_menu.png">
-                  <a href="#">HTML</a>
-                  <ul>
-                    <li>
-                      <a href="#">Оосновы HTML</a>
-                    </li>
-                    <li>
-                      <a href="#"> HTML5 </a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <img src="images/rusakov/arrow_menu.png">
-                  <a href="#">CSS</a>
-                </li>
-                <li>
-                  <img src="images/rusakov/arrow_menu.png">
-                  <a href="#">Java Script</a>
-                </li>
-                <li>
-                  <img src="images/rusakov/arrow_menu.png">
-                  <a href="#">PHP</a>
-                </li>
-                <li>
-                  <img src="images/rusakov/arrow_menu.png">
-                  <a href="#">MySQL</a>
-                </li>
-                <li>
-                  <img src="images/rusakov/arrow_menu.png">
-                  <a href="#">XML</a>
-                </li>
-              </ul>
+          <div class="main_block">
+            <div class="block-header">Уроки и статьи</div>
+            <nav class="left-content">
+              <div>
+                <a class="active" href="#">HTML</a>
+                <div>
+                  <a href="#">Основы HTML</a>
+                </div>
+                <div>
+                  <a href="#"> HTML5 </a>
+                </div>
+              </div>
+              <div>
+                <a href="#">CSS</a>
+              </div>
+              <div>
+                <a href="#">PHP</a>
+              </div>
+              <div>
+                <a href="#">MySQL</a>
+              </div>
+              <div>
+                <a href="#">XML</a>
+              </div>
+            </nav>
+          </div>
+          <div class="main_block">
+            <div class="block-header">Подписка</div>
+            <div class="left-content">
+              <div class="block-subscription">
+                <p>Подписавшись по <b>E-mail</b> ,<br/> Вы будете получать уведомления о новых статьях.</p>
+                <img src="images/rusakov/icon_rss.png" alt="Подписаться">
+                <a class="button-subscription-rss" href="#"> Подписаться </a>
+              </div>
+              <img src="images/rusakov/menu_sep.png">
+              <div class="block-subscription">
+                <p>Добавляйтесь ко мне в друзья <b>ВКонтакте</b>! Отзывы о сайте и обо мне оставляйте на стене моего аккаунта.</p>
+                <img src="images/rusakov/icon_vk.png" alt="Мой аккаунт">
+                <a class="button-subscription-vk" href="#"> Мой аккаунт </a>
+              </div>
             </div>
           </div>
-          <div class="main_left-subscription">
-            <div class="main-header">
-              <p>Подписка</p>
-            </div>
-          </div>
-          <div class="main_left-interview">
-            <div class="main-header">
-              <p>Опрос</p>
+          <div class="main_block">
+            <div class="block-header">Опрос</div>
+            <div class="left-content">
+              <p> Ваша любимая рубрика?</p>
+              <form name="pool" action="#" method="post">
+                <input type="radio" name="rubrika" value="html"> HTML
+                <br/><input type="radio" name="rubrika" value="html"> HTML
+                <br/><input type="radio" name="rubrika" value="css"> CSS
+                <br/><input type="radio" name="rubrika" value="php"> PHP
+                <br/><input type="radio" name="rubrika" value="mysql"> MySQL
+                <br/>
+              </form>
+              <a class="button-vote" href="#"> Голосовать </a>
             </div>
           </div>
         </div>
+
         <div class="main_center">
           <div class="main_center-content">
             <nav>
@@ -175,28 +182,149 @@
             <p><b>3)</b> <a href="#">JavaScript</a>. Это язык, позволяющий писать различные скрипты, например, проверка введённых данных в форму, делать выпадающие меню, делать красивый и динамический сайт.</p>
             <p><b>4)</b> <a href="#">PHP</a>. Этот язык является самым популярным по программированию Web-серверов. В частности, можно писать скрипты авторизации и регистрации пользователей, принимать и обрабатывать данные из формы, реализовывать поиск по сайту, делать собственные движки, другими словами, примеров использования PHP – бесчисленное множество.</p>
           </div>
-          <div class="main_center-article">
-            <h1>Свежие статьи</h1>
-            <div class="article_item"></div>
-            <div class="article_item"></div>
-            <div class="article_item"></div>
-            <div class="menu_page"></div>
+          <div class="main_center-content">
+            <div class="main_center-article">
+              <h1>Свежие статьи</h1>
+              <div class="article_item">
+                <div class="article_img">
+                  <img src="images/rusakov/article_img.jpg" alt="Где лучше купить выделенный сервер?" />
+                  <div>
+                    <img class="date_img" src="images/rusakov/date.png" alt="" />
+                    <div class="date_text">25<br />янв</div>
+                  </div>
+                </div>
+                <h2>Где лучше купить выделенный сервер</h2>
+                <p>В этой статье я расскажу Вам свою небольшую историю, а в конце расскажу, где лучше купить выделенный сервер. А теперь приступлю к своей истории. Всё началось с того, что мне надоело платить за Amazon S3, поскольку счета оттуда стали приходить стабильно по 200$ в месяц. А в некоторые месяцы доходили и до 500$. Если, кто не знает, то Amazon S3 - это хранилище файлов. Вы туда загружаете файлы, получаете прямые ссылки и даёте их своим клиентам. Они скачивают Ваши материалы, а Вы платите за каждый МБ. Цена 1 ГБ в районе 9-12 центов, но всё зависит от общего трафика за месяц. Чем больше скачивают, тем меньше цена за каждый ГБ.</p>
+                <a class="button_news" href="#">Прочитать</a>
+                <div class="article-info">
+                  <ul>
+                    <li>
+                      <img src="images/rusakov/icon_user.png" alt="" />
+                    </li>
+                    <li>Михаил Русаков</li>
+                    <li>2 комментария</li>
+                    <li>
+                      <a href="#">PHP</a>
+                    </li>
+                    <li>
+                      <a href="#">PHP Основы</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="article_item">
+                <div class="article_img">
+                  <img src="images/rusakov/article_img.jpg" alt="Где лучше купить выделенный сервер?" />
+                  <div>
+                    <img class="date_img" src="images/rusakov/date.png" alt="" />
+                    <div class="date_text">25<br />янв</div>
+                  </div>
+                </div>
+                <h2>Где лучше купить выделенный сервер</h2>
+                <p>В этой статье я расскажу Вам свою небольшую историю, а в конце расскажу, где лучше купить выделенный сервер. А теперь приступлю к своей истории. Всё началось с того, что мне надоело платить за Amazon S3, поскольку счета оттуда стали приходить стабильно по 200$ в месяц. А в некоторые месяцы доходили и до 500$. Если, кто не знает, то Amazon S3 - это хранилище файлов. Вы туда загружаете файлы, получаете прямые ссылки и даёте их своим клиентам. Они скачивают Ваши материалы, а Вы платите за каждый МБ. Цена 1 ГБ в районе 9-12 центов, но всё зависит от общего трафика за месяц. Чем больше скачивают, тем меньше цена за каждый ГБ.</p>
+                <a class="button_news" href="#">Прочитать</a>
+                <div class="article-info">
+                  <ul>
+                    <li>
+                      <img src="images/rusakov/icon_user.png" alt="" />
+                    </li>
+                    <li>Михаил Русаков</li>
+                    <li>2 комментария</li>
+                    <li>
+                      <a href="#">PHP</a>
+                    </li>
+                    <li>
+                      <a href="#">PHP Основы</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="article_item">
+                <div class="article_img">
+                  <img src="images/rusakov/article_img.jpg" alt="Где лучше купить выделенный сервер?" />
+                  <div>
+                    <img class="date_img" src="images/rusakov/date.png" alt="" />
+                    <div class="date_text">25<br />янв</div>
+                  </div>
+                </div>
+                <h2>Где лучше купить выделенный сервер</h2>
+                <p>В этой статье я расскажу Вам свою небольшую историю, а в конце расскажу, где лучше купить выделенный сервер. А теперь приступлю к своей истории. Всё началось с того, что мне надоело платить за Amazon S3, поскольку счета оттуда стали приходить стабильно по 200$ в месяц. А в некоторые месяцы доходили и до 500$. Если, кто не знает, то Amazon S3 - это хранилище файлов. Вы туда загружаете файлы, получаете прямые ссылки и даёте их своим клиентам. Они скачивают Ваши материалы, а Вы платите за каждый МБ. Цена 1 ГБ в районе 9-12 центов, но всё зависит от общего трафика за месяц. Чем больше скачивают, тем меньше цена за каждый ГБ.</p>
+                <a class="button_news" href="#">Прочитать</a>
+                <div class="article-info">
+                  <ul>
+                    <li>
+                      <img src="images/rusakov/icon_user.png" alt="" />
+                    </li>
+                    <li>Михаил Русаков</li>
+                    <li>2 комментария</li>
+                    <li>
+                      <a href="#">PHP</a>
+                    </li>
+                    <li>
+                      <a href="#">PHP Основы</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu_page">
+                <span>Первая</span>
+                <span>Предыдущая</span>
+                <span class="active">1</span>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">Следующая</a>
+                <a href="#">Последняя</a>
+              </div>
+            </div>
           </div>
         </div>
+
         <div class="main_right">
-          <div class="free-cource">
-            <div class="main-header">
-              <p>Бесплатный курс</p>
+          <div class="main_block">
+            <div class="block-header">Бесплатный курс</div>
+            <div class="right-content">
+              <p class="title">Бесплатный Видеокурс по основам PHP</p>
+              <img src="images/rusakov/freephp-cover.png" alt="Бесплатный Видеокурс по основам PHP" width="200px">
+              <p><b>Особенности Видеокурса:</b></p>
+              <p>- Создание реального PHP-сайта</p>
+              <p>- Регистрация и авторизация</p>
+              <p>- Гостевая книга</p>
+              <p>- Поиск по сайту</p>
+              <p class="center-text"><b>Чтобы получить Видеокурс,<br />заполните форму</b></p>
+              <form action="#" name="cource" method="post">
+                <label class="lable">
+                  E'mail: <input type="email" name="email">
+                </label>
+                <br/>
+                <label class="lable">
+                  Имя: <input class="inp1" type="text" name="name">
+                </label>
+              </form>
+              <div class="button-green">
+                <a href="#"> Получить курс </a>
+              </div>
             </div>
           </div>
-          <div class="seminar">
-            <div class="main-header">
-              <p>Семинары</p>
+          <div class="main_block">
+            <div class="block-header">Семинары</div>
+            <div class="right-content">
+              <p class="title">Как создать профессиональный Интернет-магазин</p>
+              <img src="images/rusakov/create-im.png" alt="Как создать профессиональный Интернет-магазин" width="200px">
+              <p><b>После семинара:</b></p>
+              <p>- Вы будете знать, как создать Интернет-магазин.</p>
+              <p>- Вы получите бесплатный подарок с подробным описанием каждого шага.</p>
+              <p>- Вы сможете уже приступить к созданию Интернет-магазина.</p>
+              <div class="button-green">
+                <a href="#">Записаться</a>
+              </div>
             </div>
           </div>
-          <div class="quote">
-            <div class="main-header">
-              <p>Умные цытаты</p>
+          <div class="main_block">
+            <div class="block-header">Умные цитаты</div>
+            <div class="right-content">
+                <p>Ты никогда не решишь проблему, если будешь думать так же, как те, кто ее создал.</p>
+                <p class="right"><i>Альберт Эйнштейн</i></p>
             </div>
           </div>
         </div>
