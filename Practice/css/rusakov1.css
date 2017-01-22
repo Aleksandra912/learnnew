@@ -464,8 +464,15 @@ section a:hover{
     line-height: 0.2em;
 }
 
-.main_center-content img{
+.main_center-content>img{
     float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border: 2px solid #fff;
+    box-shadow: 4px 5px 3px #545454;
+}
+
+.article_item img{
     margin-right: 10px;
     margin-bottom: 5px;
     border: 2px solid #fff;
@@ -478,6 +485,26 @@ section a:hover{
     height: 52px;
     width: 52px !important;
 }
+
+.date_text {
+    color: #fff;
+    font-size: 90%;
+    margin-top: -49px;
+    text-align: center;
+    width: 52px;
+}
+
+.article_img > div {
+    margin-top: -45px;
+    margin-left: -15px;
+}
+
+.article_img {
+    float: left;
+    margin-right: 10px;
+}
+
+
 
 .main_center-content nav{
     font-size: 120%;
@@ -508,7 +535,7 @@ section a:hover{
     background: url("../images/rusakov/arrow_more.png") no-repeat 97% center #f0b017;
     border: 1px solid #976c05;
     border-radius: 3px;
-    font-size: 100%;
+    font-size: 110%;
     float: right;
     display: block;
     padding: 2px 20px 2px 5px;
