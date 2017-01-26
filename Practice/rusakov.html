@@ -20,8 +20,8 @@
           $(".layout_slayder h2").remove();
           $(h2).prependTo(".layout_slayder");
         }
-        if (w <= 468) {
-          $("#top_sep").replaceWith("<br /><br />");
+        if (w <= 384) {
+          $(".top-br").replaceWith("<br />");
         }
       });
     </script>
@@ -97,7 +97,8 @@
             <input class="top-text" type="password" name="password" placeholder="Пароль">
             <img src="images/rusakov/icon_inter.png" alt="">
             <input class="top-submit-inter" type="submit" value="Войти">
-            <img src="images/rusakov/icon_register.png" alt="">
+            <div class="top-br"></div>
+            <img class="top-submit-img" src="images/rusakov/icon_register.png" alt="">
             <input class="top-submit-reg" type="submit" value="Регистрация">
           </form>
           <div class="top_qwes">
